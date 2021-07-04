@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>sergiocabral.com</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <style>
+            html, body, h1, h2, hr {
+                padding: 0;
+                margin: 0;
+            }
+            html {
+                background-image: url('./assets/background.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            body {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                color: #FBFBFC;
+                font-family: 'Amatic SC', cursive;
+            }
+            a {
+                color: #FBFBFC;
+            }
+            .card {
+                width: 300px;
+                height: 500px;
+                background-color: rgba(0,0,0,0.5);
+                padding: 1em;
+                border-radius: 1em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .profile {
+                border-radius: 100%;
+                background-image: url('./assets/profile.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                width: 200px;
+                height: 200px;
+                box-shadow: 0 0 20px black;
+                border: 10px solid black;
+            }
+            hr {
+                border-color: #2C3429;
+                width: 90%;
+                box-shadow: 0 0 10px rgb(44 52 41);
+                margin-top: 10px;;
+            }
+            h1 {
+                font-family: 'Amatic SC', cursive;
+                margin-top: 5px;
+                opacity: 0.9;
+            }
+            h2 {
+                margin-top: 5px;
+                opacity: 0.8;
+            }
+            .social {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 15px;
+                padding: 0 10%;
+                width: 100%;
+            }
+            .social a {
+                font-size: 2em;
+                transition: opacity 0.5s ease;
+                opacity: 0.5;
+            }
+            .social a:hover {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="profile"></div>
+            <hr/>
+            <h1>Sergio Cabral</h1>
+            <h2>Developer</h2>
+            <hr/>
+            <div class="social">
+                <a href="https://github.com/sergiocabral"><i class="fab fa-github"></i></a>
+                <a href="https://stackoverflow.com/story/sergiocabral"><i class="fab fa-stack-overflow"></i></a>
+                <a href="https://www.twitch.tv/sergiocabral_com"><i class="fab fa-twitch"></i></a>
+                <a href="mailto:contact@sergiocabral.com"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+    </body>
+</html>
