@@ -1,99 +1,101 @@
-<html>
-    <head>
-        <title>sergiocabral.com</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-        <style>
-            html, body, h1, h2, hr {
-                padding: 0;
-                margin: 0;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>sergiocabral.com</title>
+    <style>
+        html, html * {
+            margin: 0;
+            padding: 0;
+            color: rgba(255,255,255,0.75);
+            cursor: default;
+        }
+        html {
+            background-image: url(background.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            height: 100%;
+            font-family: 'Amatic SC', cursive;
+        }
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 100%;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .card {
+            background-color: rgba(255,255,255,0.05);
+            box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+            padding: 1em;
+            border-radius: 0.5em;
+        }
+        .profile, .profile > div {
+            width: 10em;
+            height: 10em;
+            background-image: url(profile.jpg);
+            background-size: contain;
+            border-radius: 100%;
+            border: 0.25em solid black;
+            box-shadow:
+                0px 0px 15px 0px rgb(255 255 255 / 50%),
+                inset 0px 0px 10px 0px black;
+            animation: spiner 7200s linear infinite;
+            
+        }
+        .profile > div {
+            background-image: url(profile2.jpg);
+            margin-top: -0.25em;
+            margin-left: -0.25em;
+            animation: hide 7200s linear infinite;
+        }
+        @keyframes spiner {
+            0% {
+                transform: rotate(0deg);
             }
-            html {
-                background-image: url('./assets/background.jpg');
-                background-size: cover;
-                background-position: center;
+            50% {
+                transform: rotate(360deg);
             }
-            body {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                color: #FBFBFC;
-                font-family: 'Amatic SC', cursive;
+            100% {
+                transform: rotate(720deg);
             }
-            a {
-                color: #FBFBFC;
+        }
+        @keyframes hide {
+            0% {
+                opacity: 0;
             }
-            .card {
-                width: 300px;
-                height: 500px;
-                background-color: rgba(0,0,0,0.5);
-                padding: 1em;
-                border-radius: 1em;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            .profile {
-                border-radius: 100%;
-                background-image: url('./assets/profile.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center center;
-                width: 200px;
-                height: 200px;
-                box-shadow: 0 0 20px black;
-                border: 10px solid black;
-            }
-            hr {
-                border-color: #2C3429;
-                width: 90%;
-                box-shadow: 0 0 10px rgb(44 52 41);
-                margin-top: 10px;;
-            }
-            h1 {
-                font-family: 'Amatic SC', cursive;
-                margin-top: 5px;
-                opacity: 0.9;
-            }
-            h2 {
-                margin-top: 5px;
-                opacity: 0.8;
-            }
-            .social {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                align-items: center;
-                margin-top: 15px;
-                padding: 0 10%;
-                width: 100%;
-            }
-            .social a {
-                font-size: 2em;
-                transition: opacity 0.5s ease;
-                opacity: 0.5;
-            }
-            .social a:hover {
+            50% {
                 opacity: 1;
             }
-        </style>
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
     </head>
     <body>
-        <div class="card">
-            <div class="profile"></div>
-            <hr/>
-            <h1>Sergio Cabral</h1>
-            <h2>Developer</h2>
-            <hr/>
-            <div class="social">
-                <a href="https://github.com/sergiocabral"><i class="fab fa-github"></i></a>
-                <a href="https://stackoverflow.com/story/sergiocabral"><i class="fab fa-stack-overflow"></i></a>
-                <a href="https://www.twitch.tv/sergiocabral_com"><i class="fab fa-twitch"></i></a>
-                <a href="mailto:contact@sergiocabral.com"><i class="far fa-envelope"></i></a>
+        <div class="content">
+            <div class="card">
+                <div class="profile"><div></div></div>
+                <h1>Sergio Cabral</h1>
+                <h2>Developer</h2>
+                <div class="social">
+                    <a href="https://github.com/sergiocabral"><i class="fab fa-github"></i></a>
+                    <a href="https://stackoverflow.com/story/sergiocabral"><i class="fab fa-stack-overflow"></i></a>
+                    <a href="https://www.twitch.tv/sergiocabral_com"><i class="fab fa-twitch"></i></a>
+                    <a href="mailto:contact@sergiocabral.com"><i class="far fa-envelope"></i></a>
+                </div>
             </div>
         </div>
     </body>
