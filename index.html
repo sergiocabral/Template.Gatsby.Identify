@@ -72,9 +72,10 @@
         }
         .card {
             background-color: rgba(255,255,255,0.05);
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0.05) 10em);
             padding: 2.5em 1em 1em 1em;
             border-radius: 0.5em;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(68,68,68,1);
             box-shadow: 0em 0em 1em 0.5em rgba(0,0,0,0.5);
             display: flex;
             flex-direction: column;
@@ -126,17 +127,20 @@
             }
         }
         .social {
+            position: relative;
+        }
+        .social > div {
             display: flex;
             flex-direction: row;
             justify-content: center;
             flex-wrap: wrap;
             font-size: 1.5em;
-            margin-top: 0.5em;
             padding-top: 0.5em;
             border-top: 1px solid rgba(255,255,255,0.15);
-            position: relative;
             padding-bottom: 0.5em;
             margin-bottom: 0.5em;
+            overflow: auto;
+            height: 125px;
         }
         .social a {
             margin: 0.25em 1em;
@@ -165,6 +169,25 @@
             text-shadow: 0px 0px 10px rgba(187, 236, 236, 0.5);
             opacity: 1;
         }
+        /* width */
+        ::-webkit-scrollbar {
+            width: 0em;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.25);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.5);
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255,255,255,0.75);
+        }
     </style>
     </head>
     <body>
@@ -173,17 +196,22 @@
                 <div class="profile"><div></div></div>
                 <h1>Sergio Cabral</h1>
                 <h2>Developer</h2>
-                <div class="social">
+                <div class="social"><div>
                     <a href="https://github.com/sergiocabral" description="GitHub" target="black"><i class="fab fa-github"></i></a>
                     <a href="https://stackoverflow.com/story/sergiocabral" description="StackOverflow" target="black"><i class="fab fa-stack-overflow"></i></a>
+                    <a href="mailto:contact@sergiocabral.com" description="E-mail" target="black"><i class="far fa-envelope"></i></a>
                     <a href="https://www.twitch.tv/sergiocabral_com" description="Twitch" target="black"><i class="fab fa-twitch"></i></a>
                     <a href="https://www.linkedin.com/in/sergiocabraljr" description="LinkedIn" target="black"><i class="fab fa-linkedin"></i></a>
-                    <a href="http://twitter.com/sergiocabraljr" description="LinkedIn" target="black"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.instagram.com/sergiocabraljunior" description="LinkedIn" target="black"><i class="fab fa-instagram"></i></a>
-                    <a href="http://sergiocabral.com/git" description="Git Playground" target="black"><i class="fab fa-git"></i></a>
                     <a href="http://sergiocabral.com/fotos" description="My Pictures" target="black"><i class="fa fa-camera-retro"></i></a>
-                    <a href="mailto:contact@sergiocabral.com" description="E-mail" target="black"><i class="far fa-envelope"></i></a>
-                </div>
+                    <a href="http://twitter.com/sergiocabraljr" description="LinkedIn" target="black"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/5522981842500" description="Whatsapp" target="black"><i class="fab fa-whatsapp"></i></a>
+                    <a href="http://sergiocabral.com/git" description="Git Playground" target="black"><i class="fab fa-git"></i></a>
+                    <a href="https://www.youtube.com/channel/UCBBmSw69UpBbncKM2Xbw-hQ" description="Devnator YouTube" target="black"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/c/SergioCabralJr" description="Personal YouTube" target="black"><i class="fab fa-youtube-square"></i></a>
+                    <a href="https://www.facebook.com/sergiocabraljr/" description="Facebook" target="black"><i class="fab fa-facebook-f"></i></i></a>
+                    <a href="http://sergiocabral.com/sorteios" description="Loto Number" target="black"><i class="fas fa-sort-numeric-down"></i></a>
+                </div></div>
             </div>
         </div>
     </body>
