@@ -1,0 +1,11 @@
+{
+    "profile": {
+        "title": "sergiocabral.dev",
+        "name": "Sergio Cabral",
+        "description": "I'm a Developer",
+        "url": "https://sergiocabral.dev/"
+    },
+    "config": {
+        "locale": "pt-BR"
+    }
+}
