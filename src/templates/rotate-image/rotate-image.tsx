@@ -11,16 +11,16 @@ export type RotateImageProps = {
 export const RotateImage = (props: RotateImageProps) => {
   return (
     <div className="rotate-image">
-      <div className="secondary" style={ {
+      <div className="primary" style={ {
         width: props.widthAndHeight,
         height: props.widthAndHeight,
-        backgroundImage: `url(${props.secondary})`,
+        backgroundImage: `url(${props.primary})`,
         animation: `spinner ${props.cycleInSeconds}s linear infinite`
       } }>
-        <div className="primary" style={ { 
+        <div className="secondary" style={ { 
           width: props.widthAndHeight,
           height: props.widthAndHeight,
-          backgroundImage: `url(${props.primary})`,
+          backgroundImage: `url(${props.secondary})`,
           animation: `hide ${props.cycleInSeconds}s linear infinite`
         } }>
         </div>
