@@ -6,6 +6,7 @@
         "url": "https://sergiocabral.dev/"
     },
     "config": {
-        "locale": "pt-BR"
+        "locale": "pt-BR",
+        "cycleInSeconds": 60
     }
 }

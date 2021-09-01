@@ -1,6 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&Roboto:wght@100&display=swap');
+
 html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Encode Sans SC', sans-serif;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    h2 {
+        font-size: 140%;
+    }
+
     &, & * {
         margin: 0;
         padding: 0;
+        cursor: default;
+    }
+
+    a {
+        cursor: pointer;
     }
 }
