@@ -8,6 +8,36 @@ const data: Configuration = {
         url: "https://sergiocabral.dev/",
         sections: [
             {
+                name: "Contact",
+                links: [
+                    {
+                        name: "Email",
+                        url: "mailto:contact@sergiocabral.com",
+                        icon: "far fa-envelope"
+                    },
+                    {
+                        name: "Whatsapp",
+                        url: "https://wa.me/5522981842500",
+                        icon: "fab fa-whatsapp"
+                    },
+                    {
+                        name: "Telegram",
+                        url: "https://t.me/sergiocabral_dev",
+                        icon: "fab fa-telegram"
+                    },
+                    {
+                        name: "Discord",
+                        url: "https://discord.com/invite/quhUpunfx7",
+                        icon: "fab fa-discord"
+                    },
+                    {
+                        name: "Guilded",
+                        url: "https://www.guilded.gg/i/VkX8nblk",
+                        icon: "fas fa-shield-alt"
+                    }
+                ]
+            },
+            {
                 name: "Social",
                 links: [
                     {
@@ -21,105 +51,61 @@ const data: Configuration = {
                         icon: "fab fa-stack-overflow"
                     },
                     {
-                        name: "E-mail",
-                        url: "mailto:contact@sergiocabral.com",
-                        icon: "far fa-envelope"
+                        name: "LinkedIn",
+                        url: "https://www.linkedin.com/in/sergiocabraljr",
+                        icon: "fab fa-linkedin"
                     },
                     {
-                        name: "GitHub",
-                        url: "https://github.com/sergiocabral",
-                        icon: "fab fa-github"
+                        name: "Twitch",
+                        url: "https://www.twitch.tv/sergiocabral_com",
+                        icon: "fab fa-twitch"
                     },
                     {
-                        name: "StackOverflow",
-                        url: "https://stackoverflow.com/story/sergiocabral",
-                        icon: "fab fa-stack-overflow"
+                        name: "Personal YouTube",
+                        url: "https://www.youtube.com/c/SergioCabralJr",
+                        icon: "fab fa-youtube-square"
                     },
                     {
-                        name: "E-mail",
-                        url: "mailto:contact@sergiocabral.com",
-                        icon: "far fa-envelope"
+                        name: "Instagram",
+                        url: "https://www.instagram.com/sergiocabraljunior",
+                        icon: "fab fa-instagram"
                     },
                     {
-                        name: "GitHub",
-                        url: "https://github.com/sergiocabral",
-                        icon: "fab fa-github"
+                        name: "Facebook",
+                        url: "https://www.facebook.com/sergiocabraljr",
+                        icon: "fab fa-facebook-f"
                     },
                     {
-                        name: "StackOverflow",
-                        url: "https://stackoverflow.com/story/sergiocabral",
-                        icon: "fab fa-stack-overflow"
-                    },
-                    {
-                        name: "E-mail",
-                        url: "mailto:contact@sergiocabral.com",
-                        icon: "far fa-envelope"
-                    },
-                    {
-                        name: "GitHub",
-                        url: "https://github.com/sergiocabral",
-                        icon: "fab fa-github"
-                    },
-                    {
-                        name: "StackOverflow",
-                        url: "https://stackoverflow.com/story/sergiocabral",
-                        icon: "fab fa-stack-overflow"
-                    },
-                    {
-                        name: "E-mail",
-                        url: "mailto:contact@sergiocabral.com",
-                        icon: "far fa-envelope"
-                    },
-                    {
-                        name: "GitHub",
-                        url: "https://github.com/sergiocabral",
-                        icon: "fab fa-github"
-                    },
-                    {
-                        name: "StackOverflow",
-                        url: "https://stackoverflow.com/story/sergiocabral",
-                        icon: "fab fa-stack-overflow"
-                    },
-                    {
-                        name: "E-mail",
-                        url: "mailto:contact@sergiocabral.com",
-                        icon: "far fa-envelope"
-                    },
-                    {
-                        name: "GitHub",
-                        url: "https://github.com/sergiocabral",
-                        icon: "fab fa-github"
-                    },
-                    {
-                        name: "StackOverflow",
-                        url: "https://stackoverflow.com/story/sergiocabral",
-                        icon: "fab fa-stack-overflow"
-                    },
-                    {
-                        name: "E-mail",
-                        url: "mailto:contact@sergiocabral.com",
-                        icon: "far fa-envelope"
-                    },
-                    {
-                        name: "GitHub",
-                        url: "https://github.com/sergiocabral",
-                        icon: "fab fa-github"
-                    },
-                    {
-                        name: "StackOverflow",
-                        url: "https://stackoverflow.com/story/sergiocabral",
-                        icon: "fab fa-stack-overflow"
-                    },
-                    {
-                        name: "E-mail",
-                        url: "mailto:contact@sergiocabral.com",
-                        icon: "far fa-envelope"
+                        name: "Twitter",
+                        url: "https://twitter.com/sergiocabraldev",
+                        icon: "fab fa-twitter"
                     }
                 ]
             },
             {
                 name: "Projects",
-                links: []
+                links: [
+                    {
+                        name: "My Pictures",
+                        url: "https://sergiocabral.com/fotos",
+                        icon: "fa fa-camera-retro"
+                    },
+                    {
+                        name: "Git Playground",
+                        url: "https://sergiocabral.com/git",
+                        icon: "fab fa-git"
+                    },
+                    {
+                        name: "Loto Number",
+                        url: "https://sergiocabral.com/sorteios",
+                        icon: "fas fa-sort-numeric-down"
+                    },
+                    {
+                        name: "Read Quickly",
+                        url: "https://sergiocabral.com/squirt/",
+                        icon: "fas fa-glasses"
+                    }
+                ]
             }
         ]
     },
