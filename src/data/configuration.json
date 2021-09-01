@@ -1,0 +1,20 @@
+{
+    "profile": {
+        "title": "sergiocabral.dev",
+        "name": "Sergio Cabral",
+        "description": "Developer",
+        "url": "https://sergiocabral.dev/",
+        "projects": [
+            {
+                "name": "Social"
+            },
+            {
+                "name": "Projects"
+            }
+        ]
+    },
+    "settings": {
+        "locale": "pt-BR",
+        "cycleInSeconds": 60
+    }
+}

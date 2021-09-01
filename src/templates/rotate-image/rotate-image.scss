@@ -1,3 +1,30 @@
+.rotate-image {
+    display: flex;
+    justify-content: center;
+    
+    .secondary {
+        box-shadow:
+            0px 0px 15px 0px rgba(255,255,255,0.5),
+            0px 0px 150px 0px rgba(26, 241, 242, 1),
+            inset 0px 0px 10px 0px black;
+
+        &, .primary {
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            margin: 0 auto;
+
+            border-radius: 100%;
+            border: 0.25em solid black;
+        }
+
+        .primary {
+            margin-top: -0.25em;
+            margin-left: -0.25em;
+        }
+    }
+}
+
 @keyframes spinner {
     0% {
         transform: rotate(0deg);
@@ -19,30 +46,5 @@
     }
     100% {
         opacity: 0;
-    }
-}
-
-.rotate-image {
-    &, .inner {
-        background-repeat: no-repeat;
-        background-size: contain;
-
-        margin: 0 auto;
-
-        width: 10em;
-        height: 10em;
-
-        border-radius: 100%;
-        border: 0.25em solid black;
-
-        box-shadow:
-            0px 0px 15px 0px rgba(255,255,255,0.5),
-            0px 0px 200px 0px rgba(26, 241, 242, 0.3),
-            inset 0px 0px 10px 0px black;
-    }
-
-    .inner {
-        margin-top: -0.25em;
-        margin-left: -0.25em;
     }
 }

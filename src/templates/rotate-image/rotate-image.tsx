@@ -1,30 +1,30 @@
 import * as React from 'react'
 import './rotate-image.scss';
 
-type Props = {
+export type RotateImageProps = {
   widthAndHeight: number | string,
   primary: string,
   secondary: string,
   cycleInSeconds: number
 };
 
-const Template = (props: Props) => {
+export const RotateImage = (props: RotateImageProps) => {
   return (
-    <div className="rotate-image" style={ {
-      width: props.widthAndHeight,
-      height: props.widthAndHeight,
-      backgroundImage: `url(${props.secondary})`,
-      animation: `spinner ${props.cycleInSeconds}s linear infinite`
-    } }>
-      <div className="inner" style={ { 
+    <div className="rotate-image">
+      <div className="secondary" style={ {
         width: props.widthAndHeight,
         height: props.widthAndHeight,
-        backgroundImage: `url(${props.primary})`,
-        animation: `hide ${props.cycleInSeconds}s linear infinite`
+        backgroundImage: `url(${props.secondary})`,
+        animation: `spinner ${props.cycleInSeconds}s linear infinite`
       } }>
+        <div className="primary" style={ { 
+          width: props.widthAndHeight,
+          height: props.widthAndHeight,
+          backgroundImage: `url(${props.primary})`,
+          animation: `hide ${props.cycleInSeconds}s linear infinite`
+        } }>
+        </div>
       </div>
     </div>
   )
 }
-
-export default Template;

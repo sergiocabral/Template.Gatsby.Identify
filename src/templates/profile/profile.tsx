@@ -1,17 +1,20 @@
 import * as React from 'react'
 import './profile.scss';
-import RotateImage from '../rotate-image/rotate-image';
+import {RotateImage} from '../rotate-image/rotate-image';
+import {Projects} from '../projects-list/projects-list';
+import { Project } from '../../types/Project';
 
-type Props = {
+export type ProfileProps = {
     name: string,
     description: string,
     imageWidthAndHeight: number | string,
     imageCycleInSeconds: number
     imagePrimary: string,
     imageSecondary: string,
+    projects: Project[]
 };
 
-const Template = (props: Props) => {
+export const Profile = (props: ProfileProps) => {
   return (
     <div className="profile">
       <div className="content">
@@ -24,10 +27,11 @@ const Template = (props: Props) => {
           />
           <h1>{props.name}</h1>
           <h2>{props.description}</h2>
+          <Projects
+            list={props.projects}
+          />
         </div>
       </div>
     </div>
   )
 }
-
-export default Template;

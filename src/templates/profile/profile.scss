@@ -36,6 +36,9 @@
 
         overflow: hidden;
 
+        display: flex;
+        flex-direction: column;
+
         border-radius: 0.5em;
         border: 1px solid rgba(68,68,68,1);
         box-shadow: 0em 0em 1em 0.5em rgba(0,0,0,0.5);
@@ -44,6 +47,16 @@
 
         h1, h2 {
             margin-top: 1em;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 200%;
+        }
+
+        h2 {
+            font-size: 130%;
+            margin-bottom: 1em;
         }
     }
 }
