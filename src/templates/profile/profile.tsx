@@ -2,7 +2,7 @@ import * as React from 'react'
 import './profile.scss';
 import {RotateImage} from '../rotate-image/rotate-image';
 import {Projects} from '../projects-list/projects-list';
-import { Project } from '../../types/Project';
+import { Section } from '../../types/Section';
 
 export type ProfileProps = {
     name: string,
@@ -11,7 +11,7 @@ export type ProfileProps = {
     imageCycleInSeconds: number
     imagePrimary: string,
     imageSecondary: string,
-    projects: Project[]
+    sections: Section[]
 };
 
 export const Profile = (props: ProfileProps) => {
@@ -28,7 +28,7 @@ export const Profile = (props: ProfileProps) => {
           <h1>{props.name}</h1>
           <h2>{props.description}</h2>
           <Projects
-            list={props.projects}
+            list={props.sections}
           />
         </div>
       </div>

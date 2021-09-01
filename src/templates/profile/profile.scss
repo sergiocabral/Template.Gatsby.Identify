@@ -28,11 +28,13 @@
     }
 
     .card {
+        position: relative;
+
         min-height: 0;
         height: 80%;
         max-height: 800px;
         
-        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0.1) 50%);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(255,255,255,0.1) 50%);
 
         overflow: hidden;
 
@@ -43,20 +45,30 @@
         border: 1px solid rgba(68,68,68,1);
         box-shadow: 0em 0em 1em 0.5em rgba(0,0,0,0.5);
 
-        padding: 2.5em 1em 1em 1em;
-
-        h1, h2 {
-            margin-top: 1em;
-            overflow: hidden;
+        .rotate-image {
+            margin: 2em 0;
         }
 
         h1 {
-            font-size: 200%;
+            font-size: 2em;
+            margin-bottom: 0.25em;
         }
 
         h2 {
-            font-size: 130%;
-            margin-bottom: 1em;
+            font-size: 1.3em;
+            margin-bottom: 2em;
+        }
+
+        &:after {
+            content: "";
+            
+            background: linear-gradient(0deg, black 10%, transparent 100%);
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 0.75em;
         }
     }
 }

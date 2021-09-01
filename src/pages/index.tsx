@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {Helmet} from 'react-helmet';
 import {Profile} from '../templates/profile/profile';
-import configuration from '../data/Configuration';
+import configuration from '../data/Data';
 import imgFavicon from '../images/favicon.png';
 import imgOpenGraph from '../images/opengraph.png';
 import imgProfilePrimary from '../images/profile-primary.jpg';
@@ -41,7 +41,7 @@ const Page = () => {
         imageCycleInSeconds={configuration.settings.cycleInSeconds}
         imagePrimary={imgProfilePrimary}
         imageSecondary={imgProfileSecondary}
-        projects={configuration.profile.projects}
+        sections={configuration.profile.sections}
       />
     </main>
   )

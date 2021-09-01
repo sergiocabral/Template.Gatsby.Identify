@@ -1,9 +1,9 @@
-import { Project } from "./Project";
+import { Section } from "./Section";
 
 export type Profile = {
     title: string,
     name: string,
     description: string,
     url: string,
-    projects: Project[]
+    sections: Section[]
 }
