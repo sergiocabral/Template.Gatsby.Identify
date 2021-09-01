@@ -41,7 +41,12 @@
 
                 &:hover {
                     color: rgba(255,255,255,0.85);
-                    background-color: rgba(255,255,255,0.06);
+                    background-color: rgba(255,255,255,0.05);
+                }
+
+                &.selected {
+                    color: rgba(255,255,255,0.85);
+                    background-color: rgba(255,255,255,0.08);
                 }
             }
         }
@@ -113,6 +118,21 @@
                 }
             }
         }
+    }
+}
+
+@media (max-height: 750px) {
+    ul.links li a:after {
+        display: none !important;
+    }
+}
+
+@media (max-height: 630px) {
+    ul.tabs {
+        display: none !important;
+    }
+    .projects-list {
+        margin-top: -1em !important;
     }
 }
 

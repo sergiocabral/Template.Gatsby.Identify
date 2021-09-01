@@ -1,6 +1,10 @@
 import {Configuration} from '../types/Configuration';
 
 const data: Configuration = {
+    settings: {
+        "locale": "pt-BR",
+        "cycleInSeconds": 3600
+    },
     profile: {
         title: "sergiocabral.dev",
         name: "Sergio Cabral",
@@ -108,10 +112,6 @@ const data: Configuration = {
                 ]
             }
         ]
-    },
-    settings: {
-        "locale": "pt-BR",
-        "cycleInSeconds": 60
     }
 };
 
