@@ -31,7 +31,7 @@ export const Projects = (props: ProjectsProps) => {
     }, Array<Link & { index: number; }>());
 
     return (
-    <div className="projects-list">
+    <div className="projects-list" style={ { display: links.length ? 'initial' : 'none' } }>
       <ul className="tabs">
         {props.list.map((section, index) => (
           <li key={section.name}>
