@@ -58,23 +58,5 @@
             font-size: 1.3em;
             margin-bottom: 2em;
         }
-
-        &:after {
-            content: "";
-            
-            background: linear-gradient(0deg, black 10%, transparent 100%);
-
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 0.75em;
-        }
-    }
-}
-
-@media (max-height: 320px) {
-    .profile .card:after {
-        display: none !important;
     }
 }

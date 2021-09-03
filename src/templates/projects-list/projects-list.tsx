@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from '../../types/Link';
 import { Section } from '../../types/Section';
 import './projects-list.scss';
 
@@ -8,6 +9,13 @@ export type ProjectsProps = {
 
 export const Projects = (props: ProjectsProps) => {
   const [listIndex, setListIndex] = useState(0);
+
+  const links = props.list
+    .map((item, index) => Object.assign(item, { index }))
+    .reduce((result, item) => {
+      result.push(...item.links.map(link => Object.assign(link, { index: item.index })));
+      return result;
+    }, Array<Link & { index: number; }>());
 
   return (
     <div className="projects-list">
@@ -24,8 +32,8 @@ export const Projects = (props: ProjectsProps) => {
         ))}
       </ul>
       <ul className="links">
-        {props.list[listIndex].links.map(link => (
-          <li key={link.name}>
+        {links.map(link => (
+          <li key={link.name} className={ listIndex === link.index ? '' : 'hide' }>
             <a href={link.url} description={link.name}>
               <i className={link.icon}></i>
             </a>
