@@ -121,13 +121,13 @@
     }
 }
 
-@media (max-height: 750px) {
+@media (max-height: 550px) {
     ul.links li a:after {
         display: none !important;
     }
 }
 
-@media (max-height: 630px) {
+@media (max-height: 480px) {
     ul.tabs {
         display: none !important;
     }
