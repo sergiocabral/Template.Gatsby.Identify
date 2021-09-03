@@ -6,8 +6,10 @@
     overflow: auto;
 
     padding: 0 1em 1px 1em;
-    
+
     ul.tabs {
+        animation: showing 5s;
+
         display: block;
 
         overflow: auto;
@@ -51,6 +53,7 @@
     }
 
     ul.links {
+        animation: showing 6s;
 
         overflow: auto;
 
@@ -118,6 +121,11 @@
 
                 &:hover:after {
                     opacity: 1;
+                }
+
+                & > svg {
+                    position: relative;
+                    top: 1px;
                 }
             }
         }

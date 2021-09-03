@@ -13,7 +13,8 @@ export type ProfileProps = {
     imageSecondary: string,
     maxWidth: number,
     maxHeight: number,
-    sections: Section[]
+    sections: Section[],
+    lightColor: string
 };
 
 export const Profile = (props: ProfileProps) => {
@@ -27,6 +28,7 @@ export const Profile = (props: ProfileProps) => {
               cycleInSeconds={props.imageCycleInSeconds}
               primary={props.imagePrimary}
               secondary={props.imageSecondary}
+              lightColor={props.lightColor}
             />
             <h1>{props.name}</h1>
             <h2>{props.description}</h2>

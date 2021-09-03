@@ -44,6 +44,7 @@ const Page = () => {
         maxWidth={configuration.settings.width}
         maxHeight={configuration.settings.height}
         sections={configuration.profile.sections}
+        lightColor={configuration.settings.lightColor}
       />
     </main>
   )

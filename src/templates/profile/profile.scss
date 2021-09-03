@@ -18,6 +18,8 @@
     justify-content: center;
 
     .content {
+        animation: showing 2s;
+
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -54,11 +56,13 @@
             h1 {
                 font-size: 2em;
                 margin-bottom: 0.25em;
+                animation: showing 3s;
             }
 
             h2 {
                 font-size: 1.3em;
                 margin-bottom: 2em;
+                animation: showing 4s;
             }
         }
 

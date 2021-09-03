@@ -3,4 +3,5 @@ export type Settings = {
     cycleInSeconds: number,
     width: number;
     height: number;
+    lightColor: string;
 }
