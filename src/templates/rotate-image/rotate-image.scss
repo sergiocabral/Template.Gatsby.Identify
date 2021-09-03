@@ -4,8 +4,10 @@
     display: flex;
     justify-content: center;
     
-    .primary {
-        &, .secondary {
+    .container {
+        background-color: black;
+
+        &, .primary, .secondary {
             background-repeat: no-repeat;
             background-size: contain;
 
@@ -15,7 +17,7 @@
             border: 0.25em solid black;
         }
 
-        .secondary {
+        .primary, .secondary {
             margin-top: -0.25em;
             margin-left: -0.25em;
         }
