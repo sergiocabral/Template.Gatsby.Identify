@@ -80,7 +80,7 @@
                 border-radius: 100%;
 
                 opacity: 0.5;
-                transition: opacity 0.5s ease, box-shadow 0.5s ease;
+                transition: box-shadow 0.5s ease;
 
                 color: rgba(255,255,255,0.75);
 
@@ -98,25 +98,26 @@
                     content: attr(description);
 
                     font-size: 0.5em;
-                    text-align: left;
-                    writing-mode: vertical-lr;
-                    transform: rotate(180deg);
+                    text-align: center;
 
-                    color: white;
+                    color: #707070;
+                    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
 
                     line-height: 1em;
 
                     position: absolute;
-                    top: calc(3em + 4px);
-                    left: 0.5em;
-                    bottom: 0.5em;
+                    left: 0;
+                    right: 0;
+                    bottom: 0.25em;
 
                     transition: opacity 0.5s ease;
                     opacity: 0;
+
+                    z-index: 1;
                 }
 
                 &:hover:after {
-                    opacity: 0.5;
+                    opacity: 1;
                 }
             }
         }
