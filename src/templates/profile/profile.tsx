@@ -11,14 +11,16 @@ export type ProfileProps = {
     imageCycleInSeconds: number
     imagePrimary: string,
     imageSecondary: string,
+    maxWidth: number,
+    maxHeight: number,
     sections: Section[]
 };
 
 export const Profile = (props: ProfileProps) => {
   return (
     <div className="profile">
-      <div className="content">
-        <div className="card">
+      <div className="content" style={ { maxWidth: props.maxWidth } }>
+        <div className="card" style={ { maxHeight: props.maxHeight } }>
           <RotateImage
             widthAndHeight={props.imageWidthAndHeight}
             cycleInSeconds={props.imageCycleInSeconds}

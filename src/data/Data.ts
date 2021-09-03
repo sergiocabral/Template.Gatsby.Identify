@@ -3,7 +3,9 @@ import {Configuration} from '../types/Configuration';
 const data: Configuration = {
     settings: {
         "locale": "pt-BR",
-        "cycleInSeconds": 3600
+        "cycleInSeconds": 3600,
+        "width": 600,
+        "height": 380
     },
     profile: {
         title: "sergiocabral.dev",

@@ -1,4 +1,6 @@
 export type Settings = {
     locale: string,
-    cycleInSeconds: number
+    cycleInSeconds: number,
+    width: number;
+    height: number;
 }
