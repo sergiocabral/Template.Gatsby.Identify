@@ -4,8 +4,8 @@ const data: Configuration = {
     settings: {
         "locale": "pt-BR",
         "cycleInSeconds": 3600,
-        "width": 600,
-        "height": 380
+        "width": 380,
+        "height": 600
     },
     profile: {
         title: "sergiocabral.dev",
