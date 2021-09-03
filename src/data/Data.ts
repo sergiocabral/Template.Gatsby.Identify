@@ -4,7 +4,7 @@ const data: Configuration = {
     settings: {
         "locale": "pt-BR",
         "cycleInSeconds": 3600,
-        "width": 380,
+        "width": 370,
         "height": 600
     },
     profile: {
@@ -39,7 +39,7 @@ const data: Configuration = {
                     {
                         name: "Guilded",
                         url: "https://www.guilded.gg/i/VkX8nblk",
-                        icon: "fas fa-shield-alt"
+                        icon: "fab fa-guilded"
                     }
                 ]
             },
@@ -85,6 +85,11 @@ const data: Configuration = {
                         name: "Twitter",
                         url: "https://twitter.com/sergiocabraldev",
                         icon: "fab fa-twitter"
+                    },
+                    {
+                        name: "about.me",
+                        url: "https://about.me/sergiocabral",
+                        icon: "far fa-address-card"
                     }
                 ]
             },
@@ -94,7 +99,7 @@ const data: Configuration = {
                     {
                         name: "My Pictures",
                         url: "https://sergiocabral.com/fotos",
-                        icon: "fa fa-camera-retro"
+                        icon: "fas fa-camera-retro"
                     },
                     {
                         name: "Git Playground",
