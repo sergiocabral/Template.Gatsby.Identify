@@ -4,7 +4,7 @@ const data: Configuration = {
     settings: {
         "locale": "pt-BR",
         "cycleInSeconds": 3600,
-        "width": 370,
+        "width": 360,
         "height": 600
     },
     profile: {
