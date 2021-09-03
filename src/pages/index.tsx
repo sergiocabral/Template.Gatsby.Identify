@@ -3,7 +3,7 @@ import {Helmet} from 'react-helmet';
 import {Profile} from '../templates/profile/profile';
 import configuration from '../data/Data';
 import imgFavicon from '../images/favicon.png';
-import imgOpenGraph from '../images/opengraph.png';
+import imgOpenGraph from '../images/opengraph.jpg';
 import imgProfilePrimary from '../images/profile-primary.jpg';
 import imgProfileSecondary from '../images/profile-secondary.jpg';
 
