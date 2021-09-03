@@ -37,7 +37,7 @@ export const Projects = (props: ProjectsProps) => {
           <li key={section.name}>
             <a 
               href="#"
-              onClick={() => setListIndex(index)}
+              onClick={(event) => { event.preventDefault(); setListIndex(index); }}
               className={index === listIndex ? 'selected' : ''}>
               {section.name}
             </a>
@@ -47,7 +47,7 @@ export const Projects = (props: ProjectsProps) => {
       <ul className="links">
         {links.map(link => (
           <li key={link.name} className={ listIndex === link.index ? '' : 'hide' }>
-            <a href={link.url} description={link.name}>
+            <a href={link.url} target="_blank" description={link.name}>
               <FontAwesomeIcon icon={icons[iconName(link.icon)]}/>
             </a>
           </li>
