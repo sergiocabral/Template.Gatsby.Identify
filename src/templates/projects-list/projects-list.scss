@@ -121,6 +121,12 @@
     }
 }
 
+@media (max-height: 320px) {
+    .projects-list {
+        display: none !important;
+    }
+}
+
 @media (max-height: 550px) {
     ul.links li a:after {
         display: none !important;

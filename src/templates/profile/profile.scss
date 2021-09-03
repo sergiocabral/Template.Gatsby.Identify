@@ -36,7 +36,7 @@
         
         background: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(255,255,255,0.1) 50%);
 
-        overflow: hidden;
+        overflow: auto;
 
         display: flex;
         flex-direction: column;
@@ -70,5 +70,11 @@
             right: 0;
             height: 0.75em;
         }
+    }
+}
+
+@media (max-height: 320px) {
+    .profile .card:after {
+        display: none !important;
     }
 }
