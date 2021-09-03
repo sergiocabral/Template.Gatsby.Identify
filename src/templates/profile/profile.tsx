@@ -21,17 +21,19 @@ export const Profile = (props: ProfileProps) => {
     <div className="profile">
       <div className="content" style={ { maxWidth: props.maxWidth } }>
         <div className="card" style={ { maxHeight: props.maxHeight } }>
-          <RotateImage
-            widthAndHeight={props.imageWidthAndHeight}
-            cycleInSeconds={props.imageCycleInSeconds}
-            primary={props.imagePrimary}
-            secondary={props.imageSecondary}
-          />
-          <h1>{props.name}</h1>
-          <h2>{props.description}</h2>
-          <Projects
-            list={props.sections}
-          />
+          <div>
+            <RotateImage
+              widthAndHeight={props.imageWidthAndHeight}
+              cycleInSeconds={props.imageCycleInSeconds}
+              primary={props.imagePrimary}
+              secondary={props.imageSecondary}
+            />
+            <h1>{props.name}</h1>
+            <h2>{props.description}</h2>
+            <Projects
+              list={props.sections}
+            />
+          </div>
         </div>
       </div>
     </div>

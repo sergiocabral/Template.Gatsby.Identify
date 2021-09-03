@@ -1,6 +1,4 @@
 .projects-list {
-    position: relative;
-
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -126,12 +124,6 @@
 }
 
 @media (max-height: 550px) {
-    ul.links li a:after {
-        display: none !important;
-    }
-}
-
-@media (max-height: 480px) {
     ul.tabs {
         display: none !important;
     }
