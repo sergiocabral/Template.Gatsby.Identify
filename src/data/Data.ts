@@ -5,7 +5,7 @@ const data: Configuration = {
         "locale": "pt-BR",
         "cycleInSeconds": 3600,
         "width": 360,
-        "height": 600,
+        "height": 605,
         "lightColor": "#1AF1F2"
     },
     profile: {
