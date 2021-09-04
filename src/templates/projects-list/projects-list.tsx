@@ -31,7 +31,7 @@ export const Projects = (props: ProjectsProps) => {
           <li key={section.name}>
             <a 
               href="#"
-              onClick={(event) => { event.preventDefault(); setCurrentSectionIndex(index); }}
+              onClick={(event) => { setCurrentSectionIndex(index); event.preventDefault(); }}
               className={index === currentSectionIndex ? 'selected' : ''}>
               {section.name}
             </a>
