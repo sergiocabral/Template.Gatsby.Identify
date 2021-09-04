@@ -1,4 +1,10 @@
+.hide {
+    display: none;
+}
+
 .projects-list {
+    animation: showing 5s;
+    
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -8,8 +14,6 @@
     padding: 0 1em 1px 1em;
 
     ul.tabs {
-        animation: showing 5s;
-
         display: block;
 
         overflow: auto;
@@ -53,19 +57,28 @@
     }
 
     ul.links {
-        animation: showing 6s;
-
         overflow: auto;
 
-        padding: 0.5em 0 2em;
+        padding: 0.5em 0;
+
+        &:last-child {
+            padding-bottom: 2em;
+        }
 
         flex-grow: 1;
 
         li {
             display: inline-block;
 
-            &.hide {
+            &.title {
                 display: none;
+                
+                background-color: rgba(255,255,255,0.05);
+                color: #909090;
+                
+                padding: 0.5em 0 0.4em 0;
+
+                margin: -1em 0 1em 0;
             }
 
             a {
@@ -142,9 +155,10 @@
         
         ul.links {
             font-size: 0.9em;
+            display: inline-block !important;
 
-            li.hide {
-                display: inline-block !important;
+            li.title {
+                display: block;
             }
         }
     }    

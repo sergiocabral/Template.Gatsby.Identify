@@ -21,38 +21,34 @@ export type ProjectsProps = {
 };
 
 export const Projects = (props: ProjectsProps) => {
-  const [listIndex, setListIndex] = useState(0);
+  const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
 
-  const links = props.list
-    .map((item, index) => Object.assign(item, { index }))
-    .reduce((result, item) => {
-      result.push(...item.links.map(link => Object.assign(link, { index: item.index })));
-      return result;
-    }, Array<Link & { index: number; }>());
-
-    return (
-    <div className="projects-list" style={ { display: links.length ? 'inherit' : 'none' } }>
+  return (
+    <div className="projects-list" style={ { display: props.list.length ? 'inherit' : 'none' } }>
       <ul className="tabs">
         {props.list.map((section, index) => (
           <li key={section.name}>
             <a 
               href="#"
-              onClick={(event) => { event.preventDefault(); setListIndex(index); }}
-              className={index === listIndex ? 'selected' : ''}>
+              onClick={(event) => { event.preventDefault(); setCurrentSectionIndex(index); }}
+              className={index === currentSectionIndex ? 'selected' : ''}>
               {section.name}
             </a>
           </li>
         ))}
       </ul>
-      <ul className="links">
-        {links.map(link => (
-          <li key={link.name} className={ listIndex === link.index ? '' : 'hide' }>
-            <a href={link.url} target="_blank" description={link.name}>
-              <FontAwesomeIcon icon={icons[iconName(link.icon)]}/>
-            </a>
-          </li>
-        ))}
-      </ul>
+      {props.list.map((section, sectionIndex) => (
+        <ul className={ 'links ' + (currentSectionIndex === sectionIndex ? '' : 'hide') }>
+          <li className="title"><h3>{section.name}</h3></li>
+          {section.links.map(link => (
+            <li key={link.name}>
+              <a href={link.url} target="_blank" description={link.name}>
+                <FontAwesomeIcon icon={icons[iconName(link.icon)]}/>
+              </a>
+            </li>
+          ))}
+        </ul>
+      ))}
     </div>
   )
 }
