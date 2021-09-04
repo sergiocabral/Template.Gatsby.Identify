@@ -160,7 +160,6 @@
 
     .projects-list {
         overflow: visible;
-        margin-top: -1em;
 
         ul.tabs {
             display: none;
@@ -170,10 +169,6 @@
             padding-bottom: 1em;
             &:last-child {
                 padding-bottom: 4em;
-            }
-
-            ul.links {
-                font-size: 0.9em;
             }
         }
     }

@@ -110,6 +110,9 @@
 
 @media (max-height: 330px) {
     .profile {
+        .content {
+            max-width: 450px;
+        }
         .card {
             overflow: hidden;
             
