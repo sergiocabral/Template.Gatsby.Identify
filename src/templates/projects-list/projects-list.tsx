@@ -27,24 +27,24 @@ export const Projects = (props: ProjectsProps) => {
   return (
     <div className="projects-list" style={ { display: props.list.length ? 'inherit' : 'none' } }>
       <ul className="tabs">
-        {props.list.map((section, index) => (
+        {props.list.map((section, sectionIndex) => 
           <li key={section.name}>
             <a 
               href={"#" + section.name}
-              onClick={() => setCurrentSectionIndex(index)}
-              className={index === currentSectionIndex ? 'selected' : ''}>
+              onClick={(event) => { setCurrentSectionIndex(sectionIndex); event.preventDefault(); }}
+              className={sectionIndex === currentSectionIndex ? 'selected' : ''}>
               {section.name}
             </a>
           </li>
-        ))}
+        )}
       </ul>
       {props.list.map((section, sectionIndex) => 
-        <div className={ 'section ' + (currentSectionIndex === sectionIndex ? '' : 'hide') }>
+        <div key={section.name + sectionIndex} className={ 'section ' + (currentSectionIndex === sectionIndex ? '' : 'hide') }>
           <div className="title hide"><h3>{section.name}</h3></div>
           {Array.isArray(section.content)
-            ? <ul className='links '>
-                {section.content.map(link => (
-                  <li key={link.name}>
+            ? <ul className='links'>
+                {section.content.map((link, linkIndex) => (
+                  <li key={section.name + sectionIndex + linkIndex}>
                     <a href={link.url} target="_blank" description={link.name}>
                       <FontAwesomeIcon icon={icons[iconName(link.icon)]}/>
                     </a>
