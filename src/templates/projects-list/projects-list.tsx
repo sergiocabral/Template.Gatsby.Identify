@@ -30,8 +30,8 @@ export const Projects = (props: ProjectsProps) => {
         {props.list.map((section, index) => (
           <li key={section.name}>
             <a 
-              href="#"
-              onClick={(event) => { setCurrentSectionIndex(index); event.preventDefault(); }}
+              href={"#" + section.name}
+              onClick={() => setCurrentSectionIndex(index)}
               className={index === currentSectionIndex ? 'selected' : ''}>
               {section.name}
             </a>
