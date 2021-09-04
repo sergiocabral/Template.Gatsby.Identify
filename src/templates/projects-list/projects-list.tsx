@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import parse from 'html-react-parser';
 import * as FreeRegularSvgIcons from '@fortawesome/free-regular-svg-icons';
 import * as FreeSolidSvgIcons from '@fortawesome/free-solid-svg-icons';
 import * as FreeBrandsSvgIcons from '@fortawesome/free-brands-svg-icons';
@@ -37,18 +38,25 @@ export const Projects = (props: ProjectsProps) => {
           </li>
         ))}
       </ul>
-      {props.list.map((section, sectionIndex) => (
-        <ul className={ 'links ' + (currentSectionIndex === sectionIndex ? '' : 'hide') }>
-          <li className="title"><h3>{section.name}</h3></li>
-          {section.links.map(link => (
-            <li key={link.name}>
-              <a href={link.url} target="_blank" description={link.name}>
-                <FontAwesomeIcon icon={icons[iconName(link.icon)]}/>
-              </a>
-            </li>
-          ))}
-        </ul>
-      ))}
+      {props.list.map((section, sectionIndex) => 
+        <div className={ 'section ' + (currentSectionIndex === sectionIndex ? '' : 'hide') }>
+          <div className="title hide"><h3>{section.name}</h3></div>
+          {Array.isArray(section.content)
+            ? <ul className='links '>
+                {section.content.map(link => (
+                  <li key={link.name}>
+                    <a href={link.url} target="_blank" description={link.name}>
+                      <FontAwesomeIcon icon={icons[iconName(link.icon)]}/>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            : <div className='html'>
+                {parse(section.content)}
+              </div>
+          }
+        </div>
+      )}
     </div>
   )
 }

@@ -15,7 +15,7 @@ const data: Configuration = {
         sections: [
             {
                 name: "Contact",
-                links: [
+                content: [
                     {
                         name: "Email",
                         url: "mailto:contact@sergiocabral.com",
@@ -45,7 +45,7 @@ const data: Configuration = {
             },
             {
                 name: "Social",
-                links: [
+                content: [
                     {
                         name: "GitHub",
                         url: "https://github.com/sergiocabral",
@@ -95,7 +95,7 @@ const data: Configuration = {
             },
             {
                 name: "Projects",
-                links: [
+                content: [
                     {
                         name: "My Pictures",
                         url: "https://sergiocabral.com/fotos",
