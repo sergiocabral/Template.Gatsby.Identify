@@ -53,7 +53,7 @@
     }
 
     ul.links {
-        animation: showing50 5s;
+        animation: showing 6s;
 
         overflow: auto;
 
@@ -124,8 +124,8 @@
                 }
 
                 & > svg {
-                    position: relative;
-                    top: 1px;
+                    height: 1em;
+                    vertical-align: -0.17em;
                 }
             }
         }
