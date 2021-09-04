@@ -17,6 +17,8 @@ const Page = () => {
 
         <meta charSet="UTF-8" />
 
+        <meta name="theme-color" content={ configuration.settings.browserColor } />
+
         <meta property="og:locale" content={ configuration.settings.locale } />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={ configuration.profile.name } />

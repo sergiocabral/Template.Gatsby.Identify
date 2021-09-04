@@ -6,6 +6,7 @@ const data: Configuration = {
         "cycleInSeconds": 3600,
         "width": 360,
         "height": 605,
+        "browserColor": "#FFD602",
         "lightColor": "#1AF1F2"
     },
     profile: {

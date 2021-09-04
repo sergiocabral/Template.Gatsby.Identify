@@ -4,4 +4,5 @@ export type Settings = {
     width: number;
     height: number;
     lightColor: string;
+    browserColor: string;
 }
