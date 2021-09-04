@@ -7,8 +7,6 @@ import imgOpenGraph from '../images/opengraph.jpg';
 import imgProfilePrimary from '../images/profile-primary.jpg';
 import imgProfileSecondary from '../images/profile-secondary.jpg';
 
-const regexMultipleSlash = /(?<!:)\/+/g;
-
 const Page = () => {
   return (
     <main>
@@ -27,7 +25,7 @@ const Page = () => {
         <meta property="og:site_name" content={ configuration.profile.title } />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image" content={ `${configuration.profile.url}/${imgOpenGraph}`.replace(regexMultipleSlash, '/') } />
+        <meta property="og:image" content={ `${configuration.profile.url}/${imgOpenGraph}` } />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={ configuration.profile.name } />
