@@ -23,7 +23,6 @@ export type ProjectsProps = {
 
 export const Projects = (props: ProjectsProps) => {
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
-
   return (
     <div className="projects-list" style={ { display: props.list.length ? 'inherit' : 'none' } }>
       <ul className="tabs">
@@ -31,7 +30,7 @@ export const Projects = (props: ProjectsProps) => {
           <li key={section.name}>
             <a 
               href={"#" + section.name}
-              onClick={(event) => { setCurrentSectionIndex(sectionIndex); event.preventDefault(); }}
+              onClick={(event) => { setCurrentSectionIndex(sectionIndex); event?.preventDefault(); }}
               className={sectionIndex === currentSectionIndex ? 'selected' : ''}>
               {section.name}
             </a>
