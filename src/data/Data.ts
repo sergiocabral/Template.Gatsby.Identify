@@ -5,7 +5,7 @@ const data: Configuration = {
         "locale": "pt-BR",
         "cycleInSeconds": 3600,
         "width": 360,
-        "height": 605,
+        "height": 606,
         "browserColor": "#FFD602",
         "lightColor": "#1AF1F2"
     },
