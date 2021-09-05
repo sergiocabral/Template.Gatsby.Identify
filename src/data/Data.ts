@@ -14,7 +14,7 @@ const data: Configuration = {
         url: "https://sergiocabral.dev/",
         sections: [
             {
-                name: "📞",
+                name: "fas fa-phone-volume",
                 description: "Contatos",
                 content: [
                     {
@@ -45,7 +45,7 @@ const data: Configuration = {
                 ]
             },
             {
-                name: "🎭",
+                name: "fas fa-globe-americas",
                 description: "Redes Sociais",
                 content: [
                     {
@@ -96,7 +96,7 @@ const data: Configuration = {
                 ]
             },
             {
-                name: "📐",
+                name: "fas fa-cogs",
                 description: "Meus Projetos",
                 content: [
                     {
@@ -122,7 +122,7 @@ const data: Configuration = {
                 ]
             },
             {
-                name: "👋",
+                name: "fas fa-id-card",
                 description: "Quem Sou Eu?",
                 content: `
                     <p>

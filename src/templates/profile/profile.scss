@@ -27,59 +27,71 @@
         min-width: 0;
         width: 80%;
         max-width: 350px;
-    }
 
-    .card {
-        position: relative;
-        
-        overflow: hidden;
+        .card {
+            position: relative;
+            
+            overflow: hidden;
 
-        min-height: 0;
-        height: 80%;
-        max-height: 650px;
+            min-height: 0;
+            height: 80%;
+            max-height: 650px;
 
-        background-color:rgba(255,255,255,0.05);
+            background-color:rgba(255,255,255,0.05);
 
-        border-radius: 0.5em;
-        border: 1px solid rgba(68,68,68,1);
-        box-shadow: 0em 0em 1em 0.5em rgba(0,0,0,0.5);
-
-        & > div {
-            overflow: auto;
-            height: 100%;
-
-            display: flex;
-            flex-direction: column;
-
-            padding-top: 1.5em;
-
-            & > h1 {
-                font-size: 2em;
-                margin-top: 0.5em;
-                margin-bottom: 0.25em;
-                animation: showing 3s;
-            }
-
-            & > h2 {
-                font-size: 1.3em;
-                margin-bottom: 1em;
-                animation: showing 4s;
-            }
-        }
-
-        &:after {
-            content: '';
-
-            display: block;
-            height: 2.5em;
             border-radius: 0.5em;
+            border: 1px solid rgba(68,68,68,1);
+            box-shadow: 0em 0em 1em 0.5em rgba(0,0,0,0.5);
 
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            & > div {
+                overflow: auto;
+                height: 100%;
 
-            background: linear-gradient(0deg, black 5%, transparent 100%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                padding: 0 1em;
+
+                & > * {
+                    margin: 0.25em 0;
+                }
+
+                & > *:first-child {
+                    margin-top: 2em;
+                }
+
+                & > *:last-child {
+                    margin-top: 1em;
+                    margin-bottom: 0;
+                    flex-grow: 0.25;
+                }
+
+                & > h1 {
+                    font-size: 2em;
+                    animation: showing 3s;
+                }
+
+                & > h2 {
+                    font-size: 1.3em;
+                    animation: showing 4s;
+                }
+            }
+
+            &:after {
+                content: '';
+
+                display: block;
+                height: 2.5em;
+                border-radius: 0.5em;
+
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+
+                background: linear-gradient(0deg, black 5%, transparent 100%);
+            }
         }
     }
 }
@@ -103,17 +115,11 @@
 }
 
 @media (max-height: 400px) {
-    .profile {
-        .content {
-            max-width: 450px;
-        }
-        .card {
-            overflow: hidden;
-            
-            & > div {
-                width: calc(100% + 0.25em);
-                padding-right: 0.5em;
-            }
+    .profile .content {
+        max-width: 450px;
+        
+        .card > div {
+            justify-content: start;
         }
     }
 }
