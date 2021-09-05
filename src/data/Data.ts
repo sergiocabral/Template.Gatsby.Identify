@@ -14,7 +14,7 @@ const data: Configuration = {
         url: "https://sergiocabral.dev/",
         sections: [
             {
-                name: "Contact",
+                name: "Contato",
                 content: [
                     {
                         name: "Email",
@@ -67,7 +67,7 @@ const data: Configuration = {
                         icon: "fab fa-twitch"
                     },
                     {
-                        name: "Personal YouTube",
+                        name: "YouTube",
                         url: "https://www.youtube.com/c/SergioCabralJr",
                         icon: "fab fa-youtube-square"
                     },
@@ -94,10 +94,10 @@ const data: Configuration = {
                 ]
             },
             {
-                name: "Projects",
+                name: "Projetos",
                 content: [
                     {
-                        name: "My Pictures",
+                        name: "Fotografias",
                         url: "https://sergiocabral.com/fotos",
                         icon: "fas fa-camera-retro"
                     },
@@ -117,6 +117,24 @@ const data: Configuration = {
                         icon: "fas fa-glasses"
                     }
                 ]
+            },
+            {
+                name: "Quem Sou Eu?",
+                content: `
+                    <p>
+                        🍕 Não me lembro bem quando comecei a me aventurar
+                        com códigos e programação, 👶 talvez nos meus 13 anos.
+                        Mas hoje tenho 39? 👨‍🦳
+                    </p>
+                    <p>
+                        🏁 Hoje em dia trabalho como <b>desenvolvedor sênior
+                        full stack</b> 😎 lidando com C#, SQL, JavaScript e TypeScript.
+                    </p>
+                    <p>
+                        👽 Mas você me encontra <b>de segunda a sexta na Twitch</b> 📺,
+                        quando faço live coding com um assunto pra cada dia.
+                    </p>
+                `
             }
         ]
     }
