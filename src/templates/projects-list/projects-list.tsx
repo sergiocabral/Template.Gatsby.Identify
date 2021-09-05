@@ -29,9 +29,10 @@ export const Projects = (props: ProjectsProps) => {
         {props.list.map((section, sectionIndex) => 
           <li key={section.name}>
             <a 
-              href={"#" + section.name}
+              href="#"
               onClick={(event) => { setCurrentSectionIndex(sectionIndex); event?.preventDefault(); }}
-              className={sectionIndex === currentSectionIndex ? 'selected' : ''}>
+              className={sectionIndex === currentSectionIndex ? 'selected' : ''}
+              description={section.description}>
               {section.name}
             </a>
           </li>
@@ -39,13 +40,17 @@ export const Projects = (props: ProjectsProps) => {
       </ul>
       {props.list.map((section, sectionIndex) => 
         <div key={section.name + sectionIndex} className={ 'section ' + (currentSectionIndex === sectionIndex ? '' : 'hide') }>
-          <div className="title hide"><h3>{section.name}</h3></div>
+          <div className="title hide"><h3>
+            {section.name}
+            {section.name.replace(/[\w\s]+/g, '').length === 0 ? ' — ' : ' '}
+            {section.description}
+          </h3></div>
           {Array.isArray(section.content)
             ? <ul className='links'>
                 {section.content.map((link, linkIndex) => (
                   <li key={section.name + sectionIndex + linkIndex}>
                     <a href={link.url} target="_blank" description={link.name}>
-                      <FontAwesomeIcon icon={icons[iconName(link.icon)]}/>
+                      <span><FontAwesomeIcon icon={icons[iconName(link.icon)]}/></span>
                     </a>
                   </li>
                 ))}

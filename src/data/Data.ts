@@ -14,7 +14,8 @@ const data: Configuration = {
         url: "https://sergiocabral.dev/",
         sections: [
             {
-                name: "Contato",
+                name: "📞",
+                description: "Contatos",
                 content: [
                     {
                         name: "Email",
@@ -44,7 +45,8 @@ const data: Configuration = {
                 ]
             },
             {
-                name: "Social",
+                name: "🎭",
+                description: "Redes Sociais",
                 content: [
                     {
                         name: "GitHub",
@@ -94,7 +96,8 @@ const data: Configuration = {
                 ]
             },
             {
-                name: "Projetos",
+                name: "📐",
+                description: "Meus Projetos",
                 content: [
                     {
                         name: "Fotografias",
@@ -119,7 +122,8 @@ const data: Configuration = {
                 ]
             },
             {
-                name: "Quem Sou Eu?",
+                name: "👋",
+                description: "Quem Sou Eu?",
                 content: `
                     <p>
                         🍕 Não me lembro bem quando comecei a me aventurar

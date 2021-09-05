@@ -19,7 +19,7 @@
         overflow: auto;
         overflow-y: hidden;
         white-space: nowrap;
-        min-height: 3.5em;
+        min-height: 3.6em;
 
         text-align: center;
         
@@ -46,7 +46,7 @@
 
                 color: rgba(255,255,255,0.75);
                 background-color: rgba(255,255,255,0.02);
-
+        
                 &:first-child {
                     border-left-width: 1px;
                 }
@@ -67,6 +67,7 @@
     .section {
         overflow: auto;
         flex-grow: 1;
+        height: 100%;
         padding: 0.5em 0.5em 3em 0.5em;
 
         .title {
@@ -82,6 +83,8 @@
                 margin: 0.5em 0;
                 font-size: 1.2em;
             }
+
+            color: #AFB1AF;
         }
 
         ul.links {
@@ -89,13 +92,9 @@
                 display: inline-block;
 
                 a {
-                    font-size: 2em;
-
                     display: inline-block;
                     width: 2em;
                     height: 2em;
-
-                    line-height: 2em;
 
                     margin: 0.25em;
 
@@ -109,6 +108,13 @@
 
                     background-color: rgba(255,255,255,0.1);
 
+                    font-size: 2em;
+                    line-height: 2em;
+
+                    &:after {
+                        font-size: 0.5em;
+                    }
+
                     &:hover {
                         color: rgba(255,255,255,0.85);
                         
@@ -117,38 +123,42 @@
                         box-shadow: 0px 0px 10px 0px rgba(187, 236, 236, 0.5);
                     }
 
-                    &:after {
-                        content: attr(description);
-
-                        font-size: 0.5em;
-                        text-align: center;
-
-                        color: #707070;
-                        text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
-
-                        line-height: 1em;
-
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 0.25em;
-
-                        transition: opacity 0.5s ease;
-                        opacity: 0;
-
-                        z-index: 1;
-                    }
-
-                    &:hover:after {
-                        opacity: 1;
-                    }
-
                     & > svg {
                         height: 1em;
                         vertical-align: -0.17em;
                     }
                 }
             }
+        }
+    }
+
+    ul li a {
+        &:after {
+            content: attr(description);
+
+            text-align: center;
+
+            color: #707070;
+            text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            transition: opacity 0.5s ease;
+            opacity: 0;
+
+            z-index: 1;
+
+            display: block;
+            line-height: 2em;
+
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.97) 25%, transparent 100%);
+        }
+
+        &:hover:after {
+            opacity: 1;
         }
     }
 }
