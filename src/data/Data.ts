@@ -8,10 +8,10 @@ const data: Configuration = {
         "lightColor": "#1AF1F2"
     },
     profile: {
-        title: "sergiocabral.dev",
+        title: "sergiocabral.com",
         name: "Sergio Cabral",
         description: "Developer",
-        url: "https://sergiocabral.dev/",
+        url: "https://sergiocabral.com/",
         sections: [
             {
                 name: "fas fa-phone-volume",
