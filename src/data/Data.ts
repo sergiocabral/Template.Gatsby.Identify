@@ -106,7 +106,7 @@ const data: Configuration = {
                     },
                     {
                         name: "Git Playground",
-                        url: "https://sergiocabral.com/git",
+                        url: "https://git.sergiocabral.com/",
                         icon: "fab fa-git"
                     },
                     {
