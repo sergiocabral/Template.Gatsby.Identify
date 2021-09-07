@@ -111,7 +111,7 @@ const data: Configuration = {
                     },
                     {
                         name: "Loto Number",
-                        url: "https://sergiocabral.com/sorteios",
+                        url: "https://sorteios.sergiocabral.com/",
                         icon: "fas fa-sort-numeric-down"
                     },
                     {
