@@ -116,7 +116,7 @@ const data: Configuration = {
                     },
                     {
                         name: "Read Quickly",
-                        url: "https://sergiocabral.com/squirt/",
+                        url: "https://quickly.sergiocabral.com/",
                         icon: "fas fa-glasses"
                     }
                 ]
