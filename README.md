@@ -1,1 +1,1 @@
-# sergiocabral.dev
+# sergiocabral.com

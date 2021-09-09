@@ -1,11 +1,19 @@
 {
-  "name": "sergiocabral.dev",
+  "name": "gatsby-template-identify",
   "version": "1.0.0",
   "private": true,
-  "description": "sergiocabral.dev",
-  "author": "Sergio Cabral",
+  "description": "Template for personal presentation website.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiocabral/Template.Gatsby.Identify.git"
+  },
+  "author": {
+    "name": "sergiocabral.com",
+    "email": "package.json@sergiocabral.com"
+  },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "gatsby-template-identify"
   ],
   "scripts": {
     "develop": "gatsby develop",
